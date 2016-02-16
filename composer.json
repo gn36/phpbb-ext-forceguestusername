@@ -1,0 +1,39 @@
+{
+	"name" : "gn36/forceguestusername",
+	"type" : "phpbb-extension",
+	"description" : "This extension enforces that guests enter a username.",
+	"homepage" : "https://github.com/gn36/phpbb-ext-forceguestusername/",
+	"version" : "1.0.0-dev",
+	"time" : "2016-02-16",
+	"license" : "GPL-2.0",
+	"authors" : [{
+			"name" : "Martin Beckmann",
+			"email" : "gn#36@phpbb.de",
+			"homepage" : "https://www.phpbb.de/",
+			"role" : "Lead Developer"
+		}
+	],
+	"require" : {
+		"php" : ">=5.3.3"
+	},
+	"require-dev" : {
+		"phpbb/epv" : "dev-master",
+		"phpbb/translation-validator" : "1.3.*"
+	},
+	"extra" : {
+		"display-name" : "gn36 - Enforce guest usernames",
+		"soft-require" : {
+			"phpbb/phpbb" : ">=3.1.0,<3.2.*@dev"
+		},
+		"version-check" : {
+			"host" : "phpbb.gn36.de",
+			"directory" : "/extensions/vinfo",
+			"filename" : "phpbb-ext-forceguestusername.json"
+		}
+	},
+	"support" : {
+		"forum" : "https://www.phpbb.de/community/",
+		"issues" : "https://github.com/gn36/phpbb-ext-forceguestusername/issues/",
+		"source" : "https://github.com/gn36/phpbb-ext-forceguestusername/"
+	}
+}

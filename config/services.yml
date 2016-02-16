@@ -1,0 +1,10 @@
+services:
+    # ------- EVENTS ------
+    gn36.forceguestusername.event.posting:
+        class: gn36\forceguestusername\event\posting
+        arguments:
+            - '@user'
+            - '@config'
+        tags:
+            - { name: event.listener }
+
