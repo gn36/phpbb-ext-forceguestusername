@@ -46,7 +46,7 @@ class posting implements EventSubscriberInterface
 		{
 			if (empty($post_data['username']))
 			{
-				//Username too short 
+				//Username too short
 				$this->user->add_lang('ucp');
 				$error = $event['error'];
 				$error[] = $this->user->lang('FIELD_TOO_SHORT', $this->config['min_name_chars'], $this->user->lang['USERNAME']);
