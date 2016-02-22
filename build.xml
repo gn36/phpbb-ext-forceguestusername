@@ -7,6 +7,7 @@
 
 	<!-- AUTO CONFIG from here on -->
 	<property name="dir" value="${buildfolder}data/${extvendor}/${extname}/" />
+	<property name="datadir" value="${buildfolder}data/" />
 	<property name="zipfolder" value="${buildfolder}zip/" />
 	
 	<exec dir="${project.basedir}"
@@ -97,7 +98,7 @@
 	
 	<!-- ======= ARCHIVE ========== -->
 	<target name="archive" depends="build">
-		<zip destfile="${zipfolder}/${extvendor}-${extname}-${version}.zip" includeemptydirs="true" basedir="${dir}" />
+		<zip destfile="${zipfolder}/${extvendor}-${extname}-${version}.zip" includeemptydirs="true" basedir="${datadir}" />
 	</target>
 	
 	<!-- ======= REBUILD ========== -->
