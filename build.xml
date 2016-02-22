@@ -23,9 +23,11 @@
 		<include name="README.md" />
 		<include name="**/*.jpg" />
 		<include name="**/*.jpeg" />
+		<include name="**/*.gif" />
 		<include name="**/*.png" />
 		<include name="**/*.css" />
 		<include name="**/*.html" />
+		<include name="**/*.js" />
 		<exclude name=".travis.yml" />
 		<exclude name="tests/**" />
 		<exclude name="travis/**" />
@@ -100,13 +102,14 @@
 	
 	<!-- ======= REBUILD ========== -->
 	<target name="rebuild">
-		<delete dir="${buildfolder}" />
+		<delete dir="${buildfolder}/data" />
 		<phingcall target="build" />
 	</target>
 	
 	<!-- ======= REBUILD-ARCHIVE == -->
 	<target name="rebuild-archive">
-		<delete dir="${buildfolder}" />
+		<delete dir="${buildfolder}/data" />
+		<delete file="${zipfolder}/${extvendor}-${extname}-${version}.zip" />
 		<phingcall target="archive" />
 	</target>
 	
