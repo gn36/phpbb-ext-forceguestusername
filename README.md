@@ -16,7 +16,9 @@ Go to "ACP" > "Customise" > "Extensions" and enable the "gn36 - Enforce guest us
 
 If you find a bug, please report it on https://github.com/gn36/phpbb-ext-forceguestusername
 
-You can also suggest new features by filing an issue. Feel free to send a pull request for any existing feature request, but please add a note to the issue that you are doing so. If possible, please also add corresponding unit tests to your PR.
+You can also suggest new features by filing an issue. However, I consider this extension to be "feature complete" and will only expand its scope if there is a very good reason to do so. For example, storing the guests last used username is outside the scope of this extension. Instead, this should be realized in an independent extension.
+
+Feel free to send a pull request for any existing feature request or bug report, but please add a note to the issue that you are doing so. If possible, please also add corresponding unit tests to your PR.
 
 If you wish to contribute a translation, feel free to send a pull request. Your translation will be automatically checked using a translation validator.
 
